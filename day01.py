@@ -5,5 +5,5 @@ with open('data/day1_input.txt') as file:
             calories.append(0)
             continue
         calories[-1] += (int(line.strip()))
-print(calories)
-print(sorted(calories)[-1])
+print(sorted(calories)[-1])         # part1
+print(sum(sorted(calories)[-3:]))   # part2
